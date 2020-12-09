@@ -10,139 +10,29 @@ const schemaString = readFileSync('./schema.graphql', { encoding: 'utf8' });
 const schema = buildSchema(schemaString);
 
 const formTableConfig = {
-	fields: [
-		{
-			name: 'affiliateId',
-			label: 'Affiliate Id'
-		},
-		{
-			name: 'status',
-            label: 'Status',
-			values: [
-				{
-					value: 1,
-					text: 'Active'
-				},
-				{
-					value: 2,
-					text: 'Inactive'
-				}
-			],
-			defaultEmpty: true
-		},
-		{
-			name: 'company',
-            label: 'Company',
-		},
-		{
-			name: 'country',
-            label: 'Country',
-			values: [
-				{
-					value: 1,
-					text: 'Spain'
-				},
-				{
-					value: 2,
-					text: 'Italy'
-				},
-				{
-					value: 3,
-					text: 'Germany'
-				},
-				{
-					value: 4,
-					text: 'Mexica'
-				}
-			],
-		},
-		{
-			name: 'username',
-            label: 'Username',
-		},
-		{
-			name: 'manager',
-            label: 'Manager',
-			values: [
-				{
-					value: 1,
-					text: 'John Kimp'
-				},
-				{
-					value: 2,
-					text: 'Italy Madrid'
-				},
-				{
-					value: 3,
-					text: 'Kim Clark'
-				}
-			],
-		},
-		{
-			name: 'website',
-            label: 'Website',
-		},
-	],
+
 	columns: [
 		{
 			name: 'id',
 			label: 'ID',
-			sortable: true,
-			input: {
-				type: 'checkbox'
-			}
 		},
 		{
 			name: 'registrationDate',
 			label: 'Registration Date',
-			sortable: false,
-			input: {
-				type: 'checkbox'
-			}
 		},
 		{
 			name: 'login',
 			label: 'Login',
-			sortable: true,
-			input: {
-				type: 'checkbox'
-			}
 		},
 		{
 			name: 'managerName',
 			label: 'Project',
-			sortable: false,
-			input: {
-				type: 'checkbox'
-			}
 		},
 		{
 			name: 'status',
 			label: 'Status',
-			sortable: false
 		},
-
-
-		
 	],
-	groupRows: true,
-	sortBy: 'id',
-	direction: 1,
-	exportUrl: '/users/export',
-	options: [
-		{
-			key: 'edit',
-			value: true
-		},
-        {
-            key: 'copy',
-            value: true
-        },
-        {
-            key: 'become',
-            value: true
-        }
-    ]
 };
 
 const formTable = {
@@ -504,33 +394,6 @@ const formTable = {
 	total: 100
 }
 
-const formTablePage2 = {
-	rows: [
-			{
-				cells: [
-					{
-						name: 'id',
-						value: 3652
-					},
-					{
-						name: 'registrationDate',
-						value: '2020-06-01 03:10:05'
-					},
-					{
-						name: 'login',
-						value: 'page2@affiliate.local'
-					},
-					{
-						name: 'managerName',
-						value: 'Sass'
-					},
-					
-				],
-			
-			},
-	],
-	total: 100
-}
 
 const root = {
 
@@ -540,7 +403,7 @@ const root = {
 	
 	getAffiliatesTableData: (params) => {
 		if (params.paginationInput.offset > 1) {
-			return formTablePage2;
+			return formTablePage;
 		}
 		const table = {...formTable};
 		table.rows = table.rows.slice(0, params.paginationInput.limit);
