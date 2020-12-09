@@ -110,7 +110,7 @@ const formTableConfig = {
 		},
 		{
 			name: 'managerName',
-			label: 'Manager Name',
+			label: 'Project',
 			sortable: false,
 			input: {
 				type: 'checkbox'
@@ -121,22 +121,8 @@ const formTableConfig = {
 			label: 'Status',
 			sortable: false
 		},
-		{
-			name: 'country',
-			label: 'Country',
-			sortable: true,
-			input: {
-				type: 'checkbox'
-			}
-		},
-		{
-			name: 'website',
-			label: 'URL',
-			sortable: false,
-			input: {
-				type: 'checkbox'
-			}
-		},
+
+
 		
 	],
 	groupRows: true,
@@ -162,677 +148,358 @@ const formTableConfig = {
 const formTable = {
 	rows: [
 		{
-			id: 1653,
+			id: 1,
 			parentId: 0,
 			cells: [
 				{
 					name: 'id',
-					value: 1653
+					value: 1
 				},
 				{
 					name: 'registrationDate',
-					value: '2000-05-01 23:10:05'
+					value: '2000-05-01'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'jaguar@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'John Coffee1'
+					value: 'Cat'
+				},
+				{
+					name: 'status',
+					value: 'paid'
 				},
 
 			],
-
 		},
 		{
-			id: 1853,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1853
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee2'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1954,
-			parentId: 1853,
-			cells: [
-				{
-					name: 'id',
-					value: 1954
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
-		
-		},
-		{
-			id: 2855,
-			parentId: 1853,
-			cells: [
-				{
-					name: 'id',
-					value: 2855
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1856,
-			parentId: 2855,
-			cells: [
-				{
-					name: 'id',
-					value: 2676
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1857,
-			parentId: 1653,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong1'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1859,
-			parentId: 2855,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1860,
-			parentId: 2855,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1861,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1862,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1863,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1864,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1865,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1866,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1867,
+			id: 2,
 			parentId: 1,
 			cells: [
 				{
 					name: 'id',
-					value: 2101
+					value: 2
 				},
 				{
 					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
+					value: '2000-05-02'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'cougar@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'Ket Strong'
+					value: 'Cat'
 				},
-				
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
 			],
-		
 		},
 		{
-			id: 1868,
+			id: 3,
+			parentId: 1,
+			cells: [
+				{
+					name: 'id',
+					value: 3
+				},
+				{
+					name: 'registrationDate',
+					value: '2000-05-03'
+				},
+				{
+					name: 'login',
+					value: 'lynx@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'Cat'
+				},
+				{
+					name: 'status',
+					value: 'panding'
+				},
+
+			],
+		},
+		{
+			id: 4,
+			parentId: 1,
+			cells: [
+				{
+					name: 'id',
+					value: 4
+				},
+				{
+					name: 'registrationDate',
+					value: '2002-05-03'
+				},
+				{
+					name: 'login',
+					value: 'cheetah@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'Cat'
+				},
+				{
+					name: 'status',
+					value: 'panding'
+				},
+
+			],
+		},
+		{
+			id: 5,
 			parentId: 0,
 			cells: [
 				{
 					name: 'id',
-					value: 1652
+					value: 5
 				},
 				{
 					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
+					value: '2012-05-03'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'tiger@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'Sandy Grid'
+					value: 'Tiget'
 				},
-				
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
 			],
-		
 		},
 		{
-			id: 1869,
+			id: 6,
 			parentId: 0,
 			cells: [
 				{
 					name: 'id',
-					value: 1653
+					value: 6
 				},
 				{
 					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
+					value: '2008-04-03'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'wildcat@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'John Coffee'
+					value: 'House Cats'
 				},
-				
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
 			],
-		
 		},
 		{
-			id: 1870,
+			id: 7,
+			parentId: 6,
+			cells: [
+				{
+					name: 'id',
+					value: 7
+				},
+				{
+					name: 'registrationDate',
+					value: '2008-04-03'
+				},
+				{
+					name: 'login',
+					value: 'exotic@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'House Cats'
+				},
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
+			],
+		},
+		{
+			id: 8,
+			parentId: 6,
+			cells: [
+				{
+					name: 'id',
+					value: 8
+				},
+				{
+					name: 'registrationDate',
+					value: '2010-04-03'
+				},
+				{
+					name: 'login',
+					value: 'siamese@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'House Cats'
+				},
+				{
+					name: 'status',
+					value: 'panding'
+				},
+
+			],
+		},
+		{
+			id: 9,
+			parentId: 8,
+			cells: [
+				{
+					name: 'id',
+					value: 9
+				},
+				{
+					name: 'registrationDate',
+					value: '2010-04-03'
+				},
+				{
+					name: 'login',
+					value: 'bluecat@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'House Cats'
+				},
+				{
+					name: 'status',
+					value: 'panding'
+				},
+
+			],
+		},
+		{
+			id: 10,
+			parentId: 8,
+			cells: [
+				{
+					name: 'id',
+					value: 10
+				},
+				{
+					name: 'registrationDate',
+					value: '2010-04-03'
+				},
+				{
+					name: 'login',
+					value: 'sphynx@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'House Cats'
+				},
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
+			],
+		},
+		{
+			id: 11,
 			parentId: 0,
 			cells: [
 				{
 					name: 'id',
-					value: 1651
+					value: 11
 				},
 				{
 					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
+					value: '2011-04-03'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'irish@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'Ket Strong'
+					value: 'Domestic Dogs'
 				},
-				
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
 			],
-		
 		},
 		{
-			id: 1871,
+			id: 12,
+			parentId: 11,
+			cells: [
+				{
+					name: 'id',
+					value: 12
+				},
+				{
+					name: 'registrationDate',
+					value: '2011-04-03'
+				},
+				{
+					name: 'login',
+					value: 'english@cats.local'
+				},
+				{
+					name: 'managerName',
+					value: 'Domestic Dogs'
+				},
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
+			],
+		},
+		{
+			id: 13,
 			parentId: 0,
 			cells: [
 				{
 					name: 'id',
-					value: 1652
+					value: 13
 				},
 				{
 					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
+					value: '2011-04-03'
 				},
 				{
 					name: 'login',
-					value: 'partnersathere@affiliate.local'
+					value: 'redfox@cats.local'
 				},
 				{
 					name: 'managerName',
-					value: 'Sandy Grid'
+					value: 'Small Dogs Dogs'
 				},
-				
+				{
+					name: 'status',
+					value: 'paid'
+				},
+
 			],
-		
 		},
-		{
-			id: 1872,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
 		
-		},
-		{
-			id: 1873,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
 		
-		},
-		{
-			id: 1874,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1875,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1876,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1877,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1878,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1653
-				},
-				{
-					name: 'registrationDate',
-					value: '2015-05-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'John Coffee'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1879,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1651
-				},
-				{
-					name: 'registrationDate',
-					value: '2016-06-01 23:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Ket Strong'
-				},
-				
-			],
-		
-		},
-		{
-			id: 1880,
-			parentId: 0,
-			cells: [
-				{
-					name: 'id',
-					value: 1652
-				},
-				{
-					name: 'registrationDate',
-					value: '2019-06-01 03:10:05'
-				},
-				{
-					name: 'login',
-					value: 'partnersathere@affiliate.local'
-				},
-				{
-					name: 'managerName',
-					value: 'Sandy Grid'
-				},
-				
-			],
-		
-		},
 	],
 	total: 100
 }

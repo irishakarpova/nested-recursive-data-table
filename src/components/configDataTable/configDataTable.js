@@ -32,6 +32,7 @@ export default function ConfigDataTable() {
 
     function createData(row){
         let rowObject = {};
+        rowObject.parentId = row.parentId;
         row.cells.map(cell => {
             return rowObject[cell.name] = cell.value;
         });

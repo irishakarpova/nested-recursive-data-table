@@ -9,18 +9,15 @@ import DataRow from './dataRow';
 import {Store} from '../store'
 import {useRowStyles} from './styles'
 
-
-
 export default function (props) {
   const store = React.useContext(Store);
-
   const [isOpen, setIsOpen] = React.useState(false);
   const classes = useRowStyles();
   
   return (
- 
     <React.Fragment>
-      <TableRow hover
+
+      <TableRow 
         key={`column.id ${props.index}`}>
         {store.columns.map((column, index) => {
         const value = props.row[column.name];
@@ -28,6 +25,7 @@ export default function (props) {
             <TableCell
               className={clsx(
                 classes.stikyCell, 
+                {[classes.colapsedHeadLevel]: isOpen},
                 classes['colapsedRowLevel'+ props.level]
               )}
               style = {index < 1 ? props.stikyColumn(index) : null }

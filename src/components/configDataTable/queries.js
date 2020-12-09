@@ -6,15 +6,8 @@ export const GET_CONFIG = gql`
       columns {
         name
         label
-        sortable
       }
-      sortBy
-      direction
       groupRows
-      options {
-        key
-        value
-      }
     }
   }
 `;
