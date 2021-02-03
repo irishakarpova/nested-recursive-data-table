@@ -1,7 +1,7 @@
 import React from 'react';
 import Alert from "@material-ui/lab/es/Alert/Alert";
 import DataTable from '../dataTable/table'
-import {Store} from '../store'
+import { Store } from '../store'
 import { tableData, config } from '../../data'
 
 export default function ConfigDataTable() {

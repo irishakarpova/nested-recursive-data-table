@@ -15,23 +15,7 @@ const theme = createMuiTheme({
       contrastThreshold: 3,
       tonalOffset: 0.2,
     },
-    overrides: {
-      MuiTableCell:{
-        root: {
-          border: '1px solid rgb(239 239 239)',
-          borderTop: 'none'
-        },
-        head:{
-          color: "#C0C3C6",
-          background: "#425261",
-        },
-      },
-      MuiTablePagination: {
-        toolbar:{
-          background: "#f1f1f1",
-        }
-      }
-     },
+
   });
 
 

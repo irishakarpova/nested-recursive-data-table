@@ -36,6 +36,7 @@ export default function () {
                   <TableCell
                     key={column.name}
                     className={clsx(
+                      classes.tableCell,
                       index === 0 ? classes.stikyHead : null,
                       index === store.config.columns.length ? classes.fixWidth : null)
                     }
@@ -64,6 +65,7 @@ export default function () {
       </TableContainer>
 
       <TablePagination
+        className={classes.tablePagination}
         rowsPerPageOptions={[5, 10, 25]}
         component="div"
         count={store.tableData.total ? store.tableData.total : 0}
