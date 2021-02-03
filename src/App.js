@@ -5,6 +5,7 @@ import AffiliateTable from "./components/configDataTable/configDataTable";
 function App() {
   return (
     <React.Fragment>
+      <CssBaseline/>
       <AffiliateTable/>
     </React.Fragment>
   );
