@@ -36,8 +36,8 @@ export const useTableStyles = makeStyles((theme, props) => ({
       clipPath: "inset(0px -5px 0px 0px)",
     },
     tableCell:{
-      background: "#425261",
-      color: '#C0C3C6',
+      background: "#119798",
+      color: '#ffffff',
       border: '1px solid rgb(239 239 239)',
       borderTop: 'none'
     },
@@ -45,8 +45,6 @@ export const useTableStyles = makeStyles((theme, props) => ({
       background: '#f1f1f1',
     }
   }))
-
-
 
   export const useRowStyles = makeStyles((theme, props) => ({
     stikyCell:{

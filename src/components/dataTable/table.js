@@ -26,7 +26,7 @@ export default function () {
   };
 
   return (
-    <Paper className={classes.root}>
+    <Paper square className={classes.root}>
         <TableContainer>
          <Table aria-label="table">
           <TableHead>
