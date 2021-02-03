@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.2.0",
     "@date-io/date-fns": "^1.3.13",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -17,21 +16,17 @@
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "clsx": "^1.1.1",
-    "graphql": "^15.3.0",
-    "i": "^0.3.6",
-    "npm": "^6.14.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
-    "typescript": "^4.0.5"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run codegen": "graphql-codegen --config codegen.yml"
+    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.tsx,.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,10 +44,9 @@
     ]
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.19.1",
-    "@graphql-codegen/typescript": "1.17.11",
-    "@graphql-codegen/typescript-react-apollo": "2.1.1",
-    "@graphql-codegen/typescript-operations": "1.17.9",
-    "@graphql-codegen/introspection": "1.18.0"
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13"
   }
 }

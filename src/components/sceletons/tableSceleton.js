@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
   tablecell:{
       background: grey[100],
-
   }
 
 }))
