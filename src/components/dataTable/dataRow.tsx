@@ -9,7 +9,18 @@ import DataRow from './dataRow';
 import {Store} from '../store'
 import {useRowStyles} from './styles'
 
-export default function (props) {
+interface Props{
+  index: number
+  row: {[index: string]: string}
+  level: number
+  hasParent?: boolean
+  parentHasParent?: boolean
+  stikyColumn: (index: number) => React.CSSProperties | undefined
+}
+
+
+export default function(props: Props) {
+  console.log(props)
   const store = React.useContext(Store);
   const [isOpen, setIsOpen] = React.useState(false);
   const classes = useRowStyles();
@@ -28,7 +39,7 @@ export default function (props) {
                 {[classes.colapsedHeadLevel]: isOpen},
                 classes['colapsedRowLevel'+ props.level]
               )}
-              style = {index < 1 ? props.stikyColumn(index) : null }
+              style = {index < 1 ? props.stikyColumn(index) : undefined }
               key={column.label}>
               {value}
               {store.rowsByParentId[props.row.id] && index === 0  ?
@@ -46,7 +57,7 @@ export default function (props) {
 
       {store.rowsByParentId[props.row.id] && 
         <React.Fragment>
-          {isOpen ? store.rowsByParentId[props.row.id].map((row, index) => {
+          {isOpen ? store.rowsByParentId[props.row.id].map((row: {[index: string]: string}, index: number) => {
             return(
               <DataRow
                 key={index}

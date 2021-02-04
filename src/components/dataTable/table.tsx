@@ -11,6 +11,7 @@ import TableRow from '@material-ui/core/TableRow';
 import DataRow from './dataRow';
 import {Store} from '../store'
 import {useTableStyles} from './styles'
+import { CSSProperties } from '@material-ui/core/styles/withStyles';
 
 const widthCell = 89
 
@@ -18,7 +19,7 @@ export default function () {
   const store = React.useContext(Store);
   const classes = useTableStyles();
 
-  const stikyColumn = (index) => {
+  const stikyColumn = (index: number) : CSSProperties | undefined => {
       return{
           left: widthCell * index,
           zIndex: 1,
@@ -31,25 +32,25 @@ export default function () {
          <Table aria-label="table">
           <TableHead>
             <TableRow>
-              {store.columns.map((column, index) => {
+              {store.columns != null && store.columns.map((column, index) => {
                 return (
                   <TableCell
                     key={column.name}
                     className={clsx(
                       classes.tableCell,
                       index === 0 ? classes.stikyHead : null,
-                      index === store.config.columns.length ? classes.fixWidth : null)
+                      (store.config != null) && index === store.config.columns.length ? classes.fixWidth : null)
                     }
-                    style = {index === 0 ? stikyColumn(index) : null }>
+                    style = {index === 0 ? stikyColumn(index) : undefined }>
                     {column.label}
                   </TableCell>
                 )
               })}
-            </TableRow>
+            </TableRow> 
           </TableHead>
           <TableBody>
             {store.rows.map((row, index) => {
-              if (row.parentId) return null;
+              if (Number(row.parentId)) return null;
               return(
                 <DataRow
                   key={index}
@@ -68,7 +69,7 @@ export default function () {
         className={classes.tablePagination}
         rowsPerPageOptions={[5, 10, 25]}
         component="div"
-        count={store.tableData.total ? store.tableData.total : 0}
+        count={store.tableData != null && store.tableData.total  ? store.tableData.total : 0}
         rowsPerPage={store.rowsPerPage ? store.rowsPerPage : 1}
         page={store.page ? store.page : 0}
         onChangePage={store.handleChangePage}

@@ -1,6 +1,7 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 
-export const useTableStyles = makeStyles((theme, props) => ({
+export const useTableStyles = makeStyles( () => 
+createStyles({
     root: {
       width: '100%',
     },
@@ -46,7 +47,7 @@ export const useTableStyles = makeStyles((theme, props) => ({
     }
   }))
 
-  export const useRowStyles = makeStyles((theme, props) => ({
+  export const useRowStyles = makeStyles(() => createStyles({
     stikyCell:{
       overflow: "hidden",
       whiteSpace: "nowrap",

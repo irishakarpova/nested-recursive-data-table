@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.js'"
+    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.tsx, .js'"
   },
   "eslintConfig": {
     "extends": "react-app"

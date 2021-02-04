@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import {createStyles, makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -10,13 +10,14 @@ import TableRow from '@material-ui/core/TableRow';
 import grey from '@material-ui/core/colors/grey';
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-  },
-  tablecell:{
-      background: grey[100],
-  }
+const useStyles = makeStyles(() => 
+  createStyles({
+    root: {
+      width: '100%',
+    },
+    tablecell:{
+        background: grey[100],
+    }
 
 }))
 
@@ -30,7 +31,7 @@ export default function () {
         <Table aria-label="table" >
           <TableHead >
             <TableRow style={{height: 60}}>
-                {[1,2,3,4,5].map((item, index)=>{
+                {[1,2,3,4,5].map( index => {
                     return(
                         <TableCell
                             classes={{root: classes.tablecell}}
@@ -44,7 +45,7 @@ export default function () {
           </TableHead>
           
           <TableBody>
-            {[1,2,3,4].map((item, index)=>{
+            {[1,2,3,4].map(index => {
                 return(
                     <TableRow key={index} style={{height: 60}}>
                     {[1,2,3,4,5].map((index)=>{

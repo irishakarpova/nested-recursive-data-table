@@ -1,8 +1,18 @@
 import React from 'react';
-import Alert from "@material-ui/lab/es/Alert/Alert";
 import DataTable from '../dataTable/table'
 import { Store } from '../store'
 import { tableData, config } from '../../data'
+
+interface CellType{
+    name: string,
+    value: string
+}
+export interface RowType{
+    id: string,
+    parentId: string,
+    cells: Array<CellType>
+}
+
 
 export default function ConfigDataTable() {
 
@@ -11,16 +21,17 @@ export default function ConfigDataTable() {
 
     let columns = config ? config.columns : [];
 
-    function createData(row){
-        let rowObject = {};
+    function createData(row: RowType){
+        let rowObject:{[index:string]:string} = {};
+
         rowObject.parentId = row.parentId;
         row.cells.map(cell => {
             return rowObject[cell.name] = cell.value;
         });
         return rowObject;
     }
-
-    let rows = [];
+    
+    let rows: {[index:string]:string}[] = [];
     let rowsByParentId = {};
     tableData.rows.map((row) => {
         const createdRow = createData(row);
@@ -34,15 +45,15 @@ export default function ConfigDataTable() {
     });
 
 
-    const handleChangePage = (event, newPage) => {
-        setPage(newPage);
+    const handleChangePage = ( event: React.MouseEvent<HTMLButtonElement, MouseEvent> | null, page: number) => {
+        setPage(page);
     };
-    const handleChangeRowsPerPage = (event) => {
+    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
         setRowsPerPage(+event.target.value);
-        setPage();
+        setPage(page);
     };
 
-    const values={
+    const values = {
         page: page,
         rowsPerPage: rowsPerPage,
         handleChangeRowsPerPage: handleChangeRowsPerPage,
@@ -57,7 +68,7 @@ export default function ConfigDataTable() {
     return (
         <Store.Provider value={values}>
             { !rows.length  ? 
-                <Alert severity="info">No results</Alert> 
+                <p>No results</p> 
                 : <DataTable/>
             }
         </Store.Provider>

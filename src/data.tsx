@@ -27,8 +27,8 @@
 export const tableData = {
 	"rows": [
 		{
-			"id": 1,
-			"parentid": 0,
+			"id": '1',
+			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
@@ -54,8 +54,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 2,
-			"parentId": 1,
+			"id": "2",
+			"parentId": "1",
 			"cells": [
 				{
 					"name": "id",
@@ -81,8 +81,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 3,
-			"parentId": 1,
+			"id": "3",
+			"parentId": "1",
 			"cells": [
 				{
 					"name": "id",
@@ -108,8 +108,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 4,
-			"parentId": 1,
+			"id": "4",
+			"parentId": "1",
 			"cells": [
 				{
 					"name": "id",
@@ -135,8 +135,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 5,
-			"parentId": 0,
+			"id": "5",
+			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
@@ -162,8 +162,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 6,
-			"parentId": 0,
+			"id": "6",
+			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
@@ -189,8 +189,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 7,
-			"parentId": 6,
+			"id": "7",
+			"parentId": "6",
 			"cells": [
 				{
 					"name": "id",
@@ -216,8 +216,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 8,
-			"parentId": 6,
+			"id": "8",
+			"parentId": "6",
 			"cells": [
 				{
 					"name": "id",
@@ -243,8 +243,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 9,
-			"parentId": 8,
+			"id": "9",
+			"parentId": "8",
 			"cells": [
 				{
 					"name": "id",
@@ -270,8 +270,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 10,
-			"parentId": 8,
+			"id": "10",
+			"parentId": "8",
 			cells: [
 				{
 					"name": "id",
@@ -351,8 +351,8 @@ export const tableData = {
 			],
 		},
 		{
-			"id": 13,
-			"parentId": 0,
+			"id": "13",
+			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
