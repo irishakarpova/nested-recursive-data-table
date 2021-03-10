@@ -20,7 +20,7 @@ interface Props{
 
 
 export default function(props: Props) {
-  console.log(props)
+
   const store = React.useContext(Store);
   const [isOpen, setIsOpen] = React.useState(false);
   const classes = useRowStyles();

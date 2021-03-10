@@ -33,6 +33,7 @@ export default function ConfigDataTable() {
     
     let rows: {[index:string]:string}[] = [];
     let rowsByParentId = {};
+
     tableData.rows.map((row) => {
         const createdRow = createData(row);
         if (row.parentId) {
@@ -48,7 +49,7 @@ export default function ConfigDataTable() {
     const handleChangePage = ( event: React.MouseEvent<HTMLButtonElement, MouseEvent> | null, page: number) => {
         setPage(page);
     };
-    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChangeRowsPerPage = ( event: React.ChangeEvent<HTMLInputElement> ) => {
         setRowsPerPage(+event.target.value);
         setPage(page);
     };
