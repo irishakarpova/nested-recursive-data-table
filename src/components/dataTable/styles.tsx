@@ -32,12 +32,11 @@ createStyles({
       whiteSpace: "nowrap",
       textOverflow: 'ellipsis',
       position: 'sticky',
-      
       boxShadow: "0 0 4px rgba(0,0,0,0.55)",
       clipPath: "inset(0px -5px 0px 0px)",
     },
     tableCell:{
-      background: "#4387cf",
+      background: "#DA64E0",
       color: '#ffffff',
       border: '1px solid rgb(239 239 239)',
       borderTop: 'none'
