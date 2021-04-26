@@ -27,12 +27,12 @@
 export const tableData = {
 	"rows": [
 		{
-			"id": '1',
+			"id": '111',
 			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
-					"value": "1"
+					"value": "111"
 				},
 				{
 					"name": "registrationDate",
@@ -54,12 +54,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "2",
-			"parentId": "1",
+			"id": "223",
+			"parentId": "111",
 			"cells": [
 				{
 					"name": "id",
-					"value": "2"
+					"value": "223"
 				},
 				{
 					"name": "registrationDate",
@@ -135,12 +135,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "5",
+			"id": "556",
 			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
-					"value": "5"
+					"value": "556"
 				},
 				{
 					"name": "registrationDate",
@@ -162,12 +162,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "6",
+			"id": "666",
 			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
-					"value": "6"
+					"value": "666"
 				},
 				{
 					"name": "registrationDate",
@@ -189,12 +189,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "7",
-			"parentId": "6",
+			"id": "713",
+			"parentId": "666",
 			"cells": [
 				{
 					"name": "id",
-					"value": "7"
+					"value": "713"
 				},
 				{
 					"name": "registrationDate",
@@ -216,12 +216,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "8",
-			"parentId": "6",
+			"id": "888",
+			"parentId": "666",
 			"cells": [
 				{
 					"name": "id",
-					"value": "8"
+					"value": "888"
 				},
 				{
 					"name": "registrationDate",
@@ -244,7 +244,7 @@ export const tableData = {
 		},
 		{
 			"id": "9",
-			"parentId": "8",
+			"parentId": "888",
 			"cells": [
 				{
 					"name": "id",
@@ -297,12 +297,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "11",
+			"id": "112",
 			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
-					"value": "11"
+					"value": "112"
 				},
 				{
 					"name": "registrationDate",
@@ -324,12 +324,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "12",
-			"parentId": "11",
+			"id": "120",
+			"parentId": "112",
 			"cells": [
 				{
 					"name": "id",
-					"value": "12"
+					"value": "120"
 				},
 				{
 					"name": "registrationDate",
@@ -351,12 +351,12 @@ export const tableData = {
 			],
 		},
 		{
-			"id": "13",
+			"id": "131",
 			"parentId": "0",
 			"cells": [
 				{
 					"name": "id",
-					"value": "13"
+					"value": "131"
 				},
 				{
 					"name": "registrationDate",

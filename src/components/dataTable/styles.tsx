@@ -36,7 +36,7 @@ createStyles({
       clipPath: "inset(0px -5px 0px 0px)",
     },
     tableCell:{
-      background: "#DA64E0",
+      background: "#8892aa",
       color: '#ffffff',
       border: '1px solid rgb(239 239 239)',
       borderTop: 'none'
