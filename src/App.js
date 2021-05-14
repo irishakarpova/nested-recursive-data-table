@@ -1,12 +1,12 @@
-import React from 'react';
-import { CssBaseline } from '@material-ui/core';
+import React from "react";
+import { CssBaseline } from "@material-ui/core";
 import AffiliateTable from "./components/configDataTable/configDataTable";
 
 function App() {
   return (
     <React.Fragment>
-      <CssBaseline/>
-      <AffiliateTable/>
+      <CssBaseline />
+      <AffiliateTable />
     </React.Fragment>
   );
 }

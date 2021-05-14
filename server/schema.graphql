@@ -35,8 +35,8 @@ input PaginationInput {
   direction: Int
 }
 type FormTableResult {
-    rows: [Row]
-    total: Int
+  rows: [Row]
+  total: Int
 }
 type Row {
   cells: [RowCell]
@@ -47,10 +47,3 @@ type RowCell {
   name: String
   value: String
 }
-
-
-
-
-
-
-

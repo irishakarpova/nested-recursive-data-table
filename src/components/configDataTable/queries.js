@@ -1,8 +1,8 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const GET_CONFIG = gql`
   query GetAffiliatesConfig {
-    getAffiliatesConfig{
+    getAffiliatesConfig {
       columns {
         name
         label
@@ -15,7 +15,7 @@ export const GET_CONFIG = gql`
 export const GET_DATA = gql`
   query GetAffiliatesTableData($paginationInput: PaginationInput) {
     getAffiliatesTableData(paginationInput: $paginationInput) {
-      rows{
+      rows {
         id
         parentId
         cells {
